@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CuisineChase" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.CuisineChase" parent="Base.Theme.CuisineChase" >
+    </style>
+
+    <style name="BottomNavCustom" parent="">
+        <item name="iconTint">@null</item>
+        <item name="itemRippleColor">@null</item>
+        <item name="simpleItemSelectedRippleColor">@null</item>
+        <item name="android:background">@drawable/bg_btm_nav</item>
+        <item name="android:elevation">5dp</item>
+        <item name="itemActiveIndicatorStyle">@null</item>
+    </style>
+</resources>

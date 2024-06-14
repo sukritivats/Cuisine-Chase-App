@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/favFragment"
+        android:name="com.example.cuisinechase.Views.FavFragment"
+        android:label="fragment_fav"
+        tools:layout="@layout/fragment_fav" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.cuisinechase.Views.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+<!--        <action-->
+<!--            android:id="@+id/action_homeFragment_to_ARFragment"-->
+<!--            app:destination="@id/ARFragment" />-->
+        <action
+            android:id="@+id/action_homeFragment_to_recipeFragment"
+            app:destination="@id/recipeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.cuisinechase.Views.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+<!--    <fragment-->
+<!--        android:id="@+id/ARFragment"-->
+<!--        android:name="com.example.cuisinechase.Views.ARFragment"-->
+<!--        android:label="fragment_a_r"-->
+<!--        tools:layout="@layout/fragment_a_r" />-->
+    <fragment
+        android:id="@+id/recipeFragment"
+        android:name="com.example.cuisinechase.Views.RecipeFragment"
+        android:label="fragment_recipe"
+        tools:layout="@layout/fragment_recipe">
+        <argument
+            android:name="recipe"
+            app:argType="com.example.cuisinechase.model.Recipe" />
+    </fragment>
+</navigation>

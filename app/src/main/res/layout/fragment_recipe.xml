@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Views.RecipeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/toolbar"
+            android:elevation="5dp"
+            android:layout_marginBottom="10dp"
+            >
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:id="@+id/ivBack"
+                android:src="@drawable/ic_back"
+                android:layout_marginStart="20dp"
+                />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="Recipe"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/burger"
+            app:layout_constraintTop_toBottomOf="@id/toolbar"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/ivMenu"
+            android:scaleType="centerCrop"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/ivMenu"
+            app:layout_constraintTop_toBottomOf="@id/ivMenu"
+            android:layout_marginTop="25dp"
+            android:text="Panner Do Pyaza"
+            android:textSize="16sp"
+            android:id="@+id/tvName"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/ivMenu"
+            app:layout_constraintTop_toBottomOf="@id/ivMenu"
+            android:text="Cuisine: Italian"
+            android:id="@+id/tvCuisine"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvName"
+            app:layout_constraintStart_toStartOf="@id/tvName"
+            android:text="Ingredients Needed: "
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:id="@+id/tvIng"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvIng"
+            app:layout_constraintStart_toStartOf="@id/tvIng"
+            android:text="Panner 500g"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/tvIngredient"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvIngredient"
+            app:layout_constraintStart_toStartOf="@id/tvIngredient"
+            android:text="Instructions"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:id="@+id/tvIns"
+            />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvIns"
+            app:layout_constraintStart_toStartOf="@id/tvIns"
+            android:text="Take paneer in a bowl"
+            android:layout_marginTop="15dp"
+            android:id="@+id/tvInstructions"
+            android:layout_marginEnd="20dp"
+            android:paddingBottom="50dp"
+            android:paddingEnd="20dp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
